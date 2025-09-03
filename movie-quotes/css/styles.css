@@ -1,0 +1,58 @@
+body{
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p {
+    margin: 9px;
+}
+
+.action{
+    color:rgb(211, 211, 211);
+}
+
+.character{
+    font-weight: 600;
+}
+
+section{
+    margin: 20px 20px;
+}
+
+.firstGroup{
+    padding: 20px;
+    /* background-color: rgb(83, 159, 83); */
+    border-radius: 10px;
+}
+
+.firstimg{
+    object-fit: cover;
+    width: 400px;
+    height: 220px;
+}
+
+.secondGroup{
+    padding: 20px;
+    /* background-color: rgb(68, 78, 64); */
+    border-radius: 10px;
+}
+
+.secondimg{
+    object-fit: cover;
+    width: 400px;
+    height: 220px;
+}
+
+.thirdGroup{
+    padding: 20px;
+    /* background-color: rgb(117, 187, 89); */
+    border-radius: 10px;
+}
+
+.thirdimg{
+    object-fit: cover;
+    max-width: 400px;
+    height: 220px;
+}
