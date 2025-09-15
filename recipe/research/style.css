@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(225, 228, 255);
+    color: rgb(77, 50, 113);
+    padding: 20px 100px  20px 100px;
+    font-family: sans-serif;
+    display: block;
+}
+
+h2{
+    margin-top: 5px;
+}
+
+img{
+    margin-bottom: 10px;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+a{
+    color:rgb(134, 5, 203);  
+}
+
+section{
+    background-color: rgb(178, 160, 191);
+    color: rgb(41, 6, 65);
+    border-radius: 7px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.sources a{
+    padding: 2px;
+    display: flex;
+}
