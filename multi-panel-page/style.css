@@ -1,0 +1,162 @@
+body {
+    font-family: "Archivo Narrow", sans-serif;
+    font-optical-sizing: auto;
+}
+
+header {
+    text-align: center;
+    background-color: rgba(255, 0, 0, .3);
+    background-image: url("https://www.thetreecenter.com/c/uploads/2014/09/Cherry_Blossoms_1-scaled.webp");
+    background-position: center;
+    padding-top: 166px;
+    padding-bottom: 188px;
+    color: aliceblue;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+    margin: 0;
+    font-size: 80px;
+    line-height: 1;
+}
+
+h2 {
+    margin: 0;
+    font-size: 30px;
+    margin-top: 16px;
+    line-height: 1;
+}
+
+h3 {
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 40px;
+    text-align: center;
+}
+
+section  > div{
+    width: 960px;
+    margin: auto;
+    padding: 0 1rem 4.5rem ;
+}
+
+
+
+#section1 {
+    background-color: rgb(148, 180, 220);
+    padding-top: 40px;
+
+    h3{
+        color: rgb(2, 64, 108);
+    }
+
+    p {
+        color: rgb(2, 64, 108);
+        padding: 0;
+        margin-top: 0;
+        font-size: 18px;
+        line-height: 1.39;
+    }
+
+    .main-column {
+        padding-top: 27px;
+        padding-bottom: 40px;
+        width: 960px;
+        margin: auto;
+    }
+
+    img {
+        width: 400px;
+        height: 300px;
+        object-fit: cover;
+        float: right;
+        margin-left: 42px;
+        margin-bottom: 40px;
+    }
+
+}
+
+#section2 {
+    padding-top: 2px;
+    background-color: rgb(235, 207, 238);
+
+    h3 {
+        padding-top: 35px;
+    }
+}
+
+.container {
+    padding-top: 5px;
+    display: grid;
+    width: 960px;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+    margin-top: 20px;
+    padding-bottom: 3em;
+}
+
+.box {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 7px;
+    padding-bottom: 15px;
+}
+
+.box p {
+    margin-top: 6px;
+    margin-right: 22px;
+    font-size: 18px;
+    line-height: 1.4;
+    word-spacing: 0px;
+}
+
+.box img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.text {
+    flex: 1;
+    margin-left: 12px;
+    max-width: 300px;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 1px;
+}
+
+#section3{
+    background-color: rgba(184, 163, 238, 0.717);
+    padding-bottom: 2em;
+    h3 {
+        padding-top: 40px;
+    }
+}
+
+
+.centered-text p{
+    text-align: center;
+    max-width: 708px;
+    margin: 0 auto;
+    font-size: 26px;
+    line-height: 1.397;
+    padding: 25px;
+    word-spacing: 0em;
+}
+
+#footer {
+    font-size: 18px;
+    padding-bottom: 41px;
+    padding-top: 13px;
+    background-color: #7c436e;
+    color: #ffffff;
+
+    p{
+        width: 960px;
+        margin: auto;
+    }
+}
