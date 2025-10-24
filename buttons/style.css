@@ -1,0 +1,642 @@
+body {
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 40px;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.button_container {
+    border: 1px solid #ddd;
+    margin: 0 10px 10px 0;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    float: left;
+    overflow: hidden;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+
+a#btn_spotify {
+    display: inline-block;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 10px 40px 0 40px;
+    background-color: #2ebd59;
+    border: 2px solid #2ebd59;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+a#btn_spotify:hover {
+    background-color: #fff;
+    border: 2px solid #000;
+    color: #000;
+}
+
+a#btn_amazon {
+    display: block;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    margin: auto;
+    margin-top: 75px;
+    padding-top: 8px;
+    background-color: #232f3e;
+    color: #fff;
+    text-align: center;
+    font-size: 60px;
+    transition: all .2s;
+}
+
+a#btn_amazon:hover {
+    background-color: #fc9a18;
+}
+
+a#btn_twitter {
+    display: inline-block;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin: auto;
+    margin-top: 105px;
+    padding: 10px 30px 0 30px;
+    background-color: #56cdf1;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a#btn_twitter:hover {
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2ebfec+0,28a5cb+100 */
+    background: rgb(46, 191, 236);
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(46, 191, 236, 1) 0%, rgba(40, 165, 203, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(46, 191, 236, 1) 0%, rgba(40, 165, 203, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(46, 191, 236, 1) 0%, rgba(40, 165, 203, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2ebfec', endColorstr='#28a5cb', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+
+}
+
+a#btn_indiegogo {
+    display: inline-block;
+    position: relative;
+    margin: auto;
+    margin-top: 100px;
+    padding: 8px 16px;
+    background-color: #fff;
+    color: #eb1478;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: -2px;
+    transition: all .2s;
+}
+
+a#btn_indiegogo:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #eb1478;
+    transition: all .5s;
+}
+
+a#btn_indiegogo:hover {
+    color: #fff;
+}
+
+a#btn_indiegogo:hover:before {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+a#btn_indiegogo span {
+    position: relative;
+    z-index: 10;
+}
+
+#btn_ibm {
+    position: relative;
+    display: inline-block;
+    padding: 50px 130px 0 0;
+    transform: translate(-25px, 75px);
+}
+
+#btn_ibm img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+}
+
+.ibm-before {
+    z-index: 2;
+    transform: translate(-7px, -2px);
+}
+
+.ibm-after {
+    opacity: 0;
+    z-index: 1;
+}
+
+#btn_ibm:hover .ibm-after {
+    opacity: 1;
+    transition: 0.5s ease-in;
+}
+
+#btn_ibm:hover .ibm-before {
+    opacity: 0;
+    transition: ease-out 0.5s;
+}
+
+#btn_apple {
+    position: relative;
+    display: inline-block;
+}
+
+#btn_apple span {
+    position: relative;
+    display: inline-block;
+}
+
+#btn_apple img {
+    position: absolute;
+    width: 100px;
+    top: 40px;
+    left: -50px;
+}
+
+#btn_apple {
+    position: relative;
+    display: inline-block;
+}
+
+#btn_apple img {
+    position: absolute;
+    width: 100px;
+    top: 40px;
+    left: -50px;
+}
+
+.apple-before {
+    z-index: 2;
+    transition: ease-out 0.5s;
+}
+
+.apple-after {
+    z-index: 1;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.5s ease-in 0.1s;
+}
+
+#btn_apple:hover .apple-before {
+    animation: shake 0.5s ease-out;
+    opacity: 0;
+}
+
+#btn_apple:hover .apple-after {
+    opacity: 1;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(-5deg);
+    }
+
+    40% {
+        transform: rotate(5deg);
+    }
+
+    60% {
+        transform: rotate(-5deg);
+    }
+
+    80% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#btn_lyft {
+    position: relative;
+    display: inline-block;
+}
+
+#btn_lyft span {
+    position: relative;
+    display: inline-block;
+    padding-top: 50px;
+}
+
+.lyft {
+    position: relative;
+    width: 150px;
+    display: block;
+    z-index: 2;
+}
+
+.lyft-car {
+    position: absolute;
+    width: 60px;
+    bottom: -45px;
+    left: -20px;
+    z-index: 1;
+    transition: transform 1s ease-in-out;
+}
+
+#btn_lyft:hover .lyft-car {
+    transform: translateX(130px);
+}
+
+#btn_thecolorrun {
+    position: relative;
+    display: inline-block;
+}
+
+#btn_thecolorrun span {
+    position: relative;
+    display: inline-block;
+}
+
+#btn_thecolorrun img {
+    position: absolute;
+    top: -10px;
+    left: -100px;
+    width: 200px;
+    transition: all 0.8s ease-in-out;
+}
+
+.color-before {
+    z-index: 2;
+}
+
+.color-after {
+    z-index: 1;
+    opacity: 0;
+}
+
+#btn_thecolorrun:hover .color-after {
+    opacity: 1;
+}
+
+#btn_thecolorrun:hover .color-before {
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+#btn_npr {
+    position: relative;
+    display: inline-block;
+}
+
+.npr-logo {
+    position: relative;
+    display: inline-block;
+}
+
+.npr-logo img {
+    position: absolute;
+    left: -120px;
+    top: 50px;
+    width: 80px;
+    transition: transform 0.6s ease-in-out;
+}
+
+.npr-n {
+    z-index: 3;
+    transform: translateX(0);
+}
+
+.npr-p {
+    z-index: 2;
+    transform: translateX(0px);
+}
+
+.npr-r {
+    z-index: 1;
+    transform: translateX(0px);
+}
+
+#btn_npr:hover .npr-p {
+    transform: translateX(80px);
+}
+
+#btn_npr:hover .npr-r {
+    transform: translateX(160px);
+}
+
+#btn_moo {
+    position: relative;
+    display: inline-block;
+
+}
+
+#btn_moo span {
+    position: relative;
+    display: inline-block;
+}
+
+#btn_moo img {
+    position: absolute;
+    width: 200px;
+    left: -100px;
+    height: auto;
+    transition: opacity 0.5s ease;
+}
+
+.moo1 {
+    opacity: 1;
+}
+
+.moo2 {
+    opacity: 0;
+}
+
+.moo3 {
+    opacity: 0;
+}
+
+.moo4 {
+    opacity: 0;
+}
+
+#btn_moo:hover .moo1 {
+    animation: fade1 2s forwards;
+}
+
+#btn_moo:hover .moo2 {
+    animation: fade2 2s forwards;
+}
+
+#btn_moo:hover .moo3 {
+    animation: fade3 2s forwards;
+}
+
+#btn_moo:hover .moo4 {
+    animation: fade4 2s forwards;
+}
+
+@keyframes fade1 {
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fade2 {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fade3 {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fade4 {
+    0% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#btn_harley {
+    position: relative;
+}
+
+.harley {
+    position: relative;
+}
+
+.harley img {
+    position: absolute;
+}
+
+.harley-before{
+    left: -100px;
+    top: 20px;
+    width: 200px;
+    z-index: 2;
+}
+
+.harley-after{
+    left: -175px;
+    top: 5px;
+    width: 345px;
+    z-index: 1;
+    opacity: 0;
+}
+
+#btn_harley:hover .harley-before{
+    opacity: 0;
+    transition: 0.5s ease-out;
+}
+
+#btn_harley:hover .harley-after{
+    opacity: 1;
+    transition: 0.5s ease-in;
+}
+
+.garden{
+    width: 100px;
+}
+
+.img-contain{
+    width: 100px;
+    height: 50px;
+    padding: 0;
+    padding-bottom: 10px;
+}
+
+#btn_botanical {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+#btn_botanical:hover span {
+    color: #28a745;
+    font-size: 25px;
+}
+
+#btn_botanical img.garden {
+    object-fit: fill;
+    height: auto;
+}
+
+
+#btn_ideo {
+    text-decoration: none;
+}
+
+.logo-grid {
+    padding-left: 60px;
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 60px);
+    grid-template-rows: repeat(2, 60px);
+    gap: 5px;
+}
+
+.grid-square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    transition: background-color 0.3s;
+}
+
+#btn_ideo:hover .grid-square:nth-child(1) {
+    background-color: orange;
+    transition-delay: 0s;
+}
+#btn_ideo:hover .grid-square:nth-child(2) {
+    background-color: orange;
+    transition-delay: 0.2s;
+}
+#btn_ideo:hover .grid-square:nth-child(3) {
+    background-color: orange;
+    transition-delay: 0.4s;
+}
+#btn_ideo:hover .grid-square:nth-child(4) {
+    background-color: orange;
+    transition-delay: 0.6s;
+}
+
+
+#btn_exploding {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: black;
+    transition: color 0.3s;
+}
+
+#btn_exploding .cat {
+    max-width: 100px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+/* Shake animation for the cat */
+@keyframes shake {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    20% { transform: translate(-5px, 0) rotate(-10deg); }
+    40% { transform: translate(5px, 0) rotate(10deg); }
+    60% { transform: translate(-5px, 0) rotate(-10deg); }
+    80% { transform: translate(5px, 0) rotate(10deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+#btn_exploding:hover .cat {
+    animation: shake 0.5s ease-in-out;
+}
+
+#btn_exploding span {
+    font-size: 2rem;
+    font-weight: bold;
+    background: linear-gradient(to right, black, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#btn_exploding:hover span {
+    background: linear-gradient(to right, red, orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
