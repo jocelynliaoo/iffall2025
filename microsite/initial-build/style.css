@@ -1,0 +1,334 @@
+/* Design System - All colors in HSL */
+:root {
+    --background: hsl(0, 0%, 0%);
+    --foreground: hsl(0, 0%, 98%);
+    --card: hsl(0, 10%, 8%);
+    --card-foreground: hsl(0, 0%, 98%);
+    --popover: hsl(0, 10%, 5%);
+    --popover-foreground: hsl(0, 0%, 98%);
+    --primary: hsl(0, 70%, 35%);
+    --primary-foreground: hsl(0, 0%, 98%);
+    --secondary: hsl(0, 15%, 15%);
+    --secondary-foreground: hsl(0, 0%, 98%);
+    --muted: hsl(0, 10%, 20%);
+    --muted-foreground: hsl(0, 0%, 70%);
+    --accent: hsl(0, 85%, 45%);
+    --accent-foreground: hsl(0, 0%, 98%);
+    --destructive: hsl(0, 84.2%, 60.2%);
+    --destructive-foreground: hsl(0, 0%, 98%);
+    --border: hsl(0, 10%, 15%);
+    --input: hsl(0, 10%, 15%);
+    --ring: hsl(0, 70%, 35%);
+  }
+  
+  /* Reset and Base Styles */
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Animations */
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes float-up {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .animate-fade-in {
+    animation: fade-in 0.6s ease-out;
+  }
+  
+  .animate-float-up {
+    animation: float-up 0.6s ease-out;
+  }
+  
+  .animate-float-up:hover {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .animate-float-delayed {
+    animation: float-up 0.6s ease-out 0.2s backwards, float 3s ease-in-out 0.8s infinite;
+  }
+  
+  /* Layout */
+  .main-container {
+    min-height: 100vh;
+  }
+  
+  iframe{
+    padding-left: 100px;
+    width: 300px;
+  }
+
+  .section-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 30px;
+    margin-bottom: 10px;
+  }
+  
+  
+  .grid-2col {
+    display: grid;
+    gap: 3rem;
+    align-items: center;
+  }
+  
+  @media (min-width: 768px) {
+    .grid-2col {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  .gap-large {
+    gap: 3rem;
+  }
+  
+  .relative-z {
+    position: relative;
+    z-index: 10;
+  }
+  
+  /* Typography */
+  .section-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    color: var(--foreground);
+  }
+  
+  @media (min-width: 768px) {
+    .section-title {
+      font-size: 3.75rem;
+    }
+  }
+  
+  .section-title.center {
+    text-align: center;
+  }
+  
+  .text-large {
+    font-size: 1.125rem;
+    color: var(--muted-foreground);
+    line-height: 1.75;
+  }
+  
+  .text-muted {
+    color: var(--muted-foreground);
+    line-height: 1.75;
+  }
+  
+  .mb-4 {
+    margin-bottom: 1rem;
+  }
+  
+  .mb-6 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .mb-8 {
+    margin-bottom: 2rem;
+  }
+  
+  /* Hero Section */ 
+  
+  .hero-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  
+  /* What Is Section */
+  .what-is-section {
+    padding: 6rem 1.5rem;
+    background: linear-gradient(to bottom, var(--background), var(--secondary));
+  }
+  
+  @media (min-width: 768px) {
+    .what-is-section {
+      padding: 6rem 3rem;
+    }
+  }
+  
+  /* Image Styles */
+  .image-container {
+    position: relative;
+  }
+  
+  .section-image {
+    border-radius: 0.5rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1;
+  }
+  
+  .grayscale {
+    filter: grayscale(100%);
+  }
+  
+  .images-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  /* How It Sounds Section */
+  .how-sounds-section {
+    padding: 6rem 1.5rem;
+    background-color: var(--secondary);
+  }
+  
+  @media (min-width: 768px) {
+    .how-sounds-section {
+      padding: 6rem 3rem;
+    }
+  }
+  
+  .sounds-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .sound-card {
+    background-color: var(--card);
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    border: 1px solid var(--border);
+  }
+  
+  .visualizer-container {
+    height: 4rem;
+    background-color: var(--muted);
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .visualizer {
+    display: flex;
+    gap: 0.25rem;
+    height: 3rem;
+  }
+  
+  .visualizer-bar {
+    width: 0.25rem;
+    border-radius: 9999px;
+  }
+  
+  .visualizer-bar.primary {
+    background-color: var(--primary);
+  }
+  
+  .visualizer-bar.accent {
+    background-color: var(--accent);
+  }
+  
+  /* Where It Began Section */
+  .where-began-section {
+    padding: 6rem 1.5rem;
+    background: linear-gradient(to bottom, var(--secondary), var(--background));
+  }
+  
+  @media (min-width: 768px) {
+    .where-began-section {
+      padding: 6rem 3rem;
+    }
+  }
+  
+  .text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  /* Culture Section */
+  .culture-section {
+    padding: 6rem 1.5rem;
+    background: linear-gradient(to bottom, var(--background), var(--secondary));
+    position: relative;
+    overflow: hidden;
+  }
+  
+  @media (min-width: 768px) {
+    .culture-section {
+      padding: 6rem 3rem;
+    }
+  }
+  
+  .culture-background {
+    position: absolute;
+    inset: 0;
+    opacity: 0.2;
+    background-image: url('./src/assets/disco-lights.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* How It Spread Section */
+  .how-spread-section {
+    padding: 6rem 1.5rem;
+    background-color: var(--secondary);
+  }
+  
+  @media (min-width: 768px) {
+    .how-spread-section {
+      padding: 6rem 3rem;
+    }
+  }
+  
+  .text-content-wide {
+    display: flex;
+    flex-direction: column;
+  }
+  
