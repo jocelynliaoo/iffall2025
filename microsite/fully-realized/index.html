@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Is Our House</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@300;400;500;600&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="top-navbar">
+        <a href="#hero-content" class="nav-logo">
+            <img src="https://pngimg.com/d/disco_ball_PNG7.png" alt="Home Logo">
+        </a>
+
+        <div class="nav-links">
+            <a href="#what-is-section">What is House Music?</a>
+            <a href="#how-sounds-section">How it Sounds</a>
+            <a href="#where-began-section">Where it Began</a>
+            <a href="#culture-section">Culture & Dance</a>
+            <a href="#how-spread-section">How It Spread</a>
+        </div>
+    </nav>
+
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="hamburger-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <div class="menu-overlay"></div>
+
+    <nav class="mobile-menu">
+        <a href="#hero-content" class="mobile-link">Home</a>
+        <a href="#what-is-section" class="mobile-link">What is House Music?</a>
+        <a href="#how-sounds-section" class="mobile-link">How it Sounds</a>
+        <a href="#where-began-section" class="mobile-link">Where it Began</a>
+        <a href="#culture-section" class="mobile-link">Culture & Dance</a>
+        <a href="#how-spread-section" class="mobile-link">How It Spread</a>
+    </nav>
+
+    <div class="main-container">
+
+        <section id="hero-content">
+            <img src="house-title.png" alt="house-title">
+        </section>
+
+        <!-- What Is Section -->
+        <section id="what-is-section">
+            <div class="section-container grid-2col">
+                <div>
+                    <h2 class="section-title">What is House Music?</h2>
+                    <p class="text-large mb-4">
+                        House music, or simply house, was created by DJs and producers in Chicago. House was created and
+                        pioneered by DJs and producers in Chicago such as Frankie Knuckles, Ron Hardy, Jesse Saunders,
+                        Chip E., and others. House music initially expanded to New York City, then internationally to
+                        cities such as London, and ultimately became a worldwide phenomenon
+                    </p>
+                    <p class="text-large">
+                        House is a genre of electronic dance music characterized by a repetitive four-on-the-floor beat
+                        and a typical tempo of 115–130 beats per minute.
+                    </p>
+                </div>
+
+                <div class="image-container">
+                    <img src="intro.png" alt="DJ" class="section-image animate-float-delayed">
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Sounds Section -->
+        <section id="how-sounds-section">
+            <div class="grid-2col gap-medium">
+                <div class="images-stack">
+                    <iframe title="house" data-testid="embed-iframe"
+                        src="https://open.spotify.com/embed/track/2LD2gT7gwAurzdQDQtILds?utm_source=generator&theme=0"
+                        width="50%" height="352" frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
+                </div>
+                <div class="text-content">
+                    <h2 class="section-title">How it sounds</h2>
+                    <p class="text-large mb-6">
+                        The genre is characterized by repetitive 4/4 rhythms including bass drums, off-beat hi-hats,
+                        snare drums, claps, and/or snaps at a tempo of between 120 and 130 beats per minute (bpm). The
+                        drumbeats in house music are almost always provided by an electronic drum machine, often a
+                        Roland TR-808. Claps, shakers, snare drum, or hi-hat sounds are used to
+                        add syncopation.
+                    </p>
+
+                    <p class="text-large">
+                        House beats often include open hi-hats on the offbeat (in between the kick drums) and claps
+                        or snares on every second and fourth beat. Add to that a deep bassline, a
+                        synthesizer-generated riff and the occasional soulful or funk-inspired vocal and you've got
+                        yourself a quintessential house record.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Where It Began Section -->
+        <section id="where-began-section">
+            <div class="section-container">
+                <div class="grid-2col gap-large">
+                    <div class="text-content">
+                        <h2 class="section-title">Where it Began?</h2>
+                        <p class="text-large mb-6">
+                            The name "house music" originated from a Chicago club called the Warehouse that was open
+                            from 1977-1982. Frankie Knuckles was the resident DJ of the club and he perfected the trend
+                            of splicing together different records when he found that the records he had were not long
+                            enough to satisfy his audience of dancers.
+                        </p>
+
+                        <p class="text-large">
+                            After the Warehouse closed in 1983, eventually Larry Levan went on to open a new club. The
+                            Powerhouse, later to be called The Power Plant, apparently was renamed, because Music Box
+                            with Ron Hardy as the resident DJ.
+                        </p>
+                    </div>
+                    <div class="images-stack">
+                        <img src="whereitbegan.png" alt="Vintage DJ"
+                            class="section-image grayscale animate-float-up mb-6">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Culture Section -->
+        <section id="culture-section">
+            <div class="culture-background"></div>
+
+            <div class="section-container relative-z">
+
+                <div class="grid-2col gap-large">
+                    <div class="images-stack">
+                        <img src="culture-dance.png" alt="dance" class="animate-float-up mb-6">
+                    </div>
+                    <div class="text-content">
+                        <h2 class="section-title">Culture and Dance</h2>
+                        <p class="text-large mb-6">
+                            Early house lyrics contained positive, uplifting messages, but spoke especially to African
+                            Americans, Latinos, and the gay subculture. The house music dance scene was one of the most
+                            integrated and progressive spaces in the
+                            1980s. Minority groups were able to dance together in a positive environment.
+                        </p>
+
+                        <p class="text-large">
+                            At least three styles of dancing are associated with early house music: jacking, footwork
+                            and lofting; these styles include a variety of techniques and sub-styles. One of the primary
+                            elements in house dancing is "the jack," or "jacking" — a style created
+                            in the early days of Chicago house that left its trace in numerous record titles.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Spread Section -->
+        <section id="how-spread-section">
+            <div class="section-container">
+                <h2 class="section-title center">How It Spread</h2>
+
+                <div class="spread-grid">
+                    <div class="spread-card">
+                        <div class="spread-image">
+                            <img alt="Detroit"
+                                src="https://www.therevolverclub.com/cdn/shop/articles/Untitled_design_4_75990e21-3e19-4ca6-a09e-f44e940e49a2.png?v=1702469235&width=1366">
+                        </div>
+                        <div class="spread-content">
+                            <h3 class="spread-title">Detroit</h3>
+                            <p class="text-large">
+                                In Detroit during the early and mid-1980s, a new kind of music began to emerge around
+                                Juan
+                                Atkins, Derrick May and Kevin Saunderson, known as the Belleville Three, who fused the
+                                futuristic sounds into a signature Detroit sound that was a main influence for the later
+                                techno
+                                genre. Their music included elements of Chicago house, although the term "house music"
+                                played a
+                                less important role in Detroit than in Chicago, and the term "techno" was established.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="spread-card">
+                        <div class="spread-image">
+                            <img alt="UK"
+                                src="https://cdn.prod.website-files.com/66428b017813ba35b9c025ad/6666e13b002455215e50ca5d_Page-2b.unknown-credit.Simon-Damien-Jack-acid-house-party-1991-1280x863.jpeg">
+                        </div>
+                        <div class="spread-content">
+                            <h3 class="spread-title">United Kingdom</h3>
+                            <p class="text-large">
+                                With house music already massive on the 1980s dance scene, it eventually penetrated the
+                                UK
+                                singles chart. London DJ "Evil" Eddie Richards spun at dance parties as resident at the
+                                Clink
+                                Street club in London, eventually house music penetrated the UK singles chart. Albums
+                                featuring
+                                a style or labels came from Ibiza at the time, mixing house music with a more commercial
+                                Balearic mix of house was discernable.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="spread-card">
+                        <div class="spread-image">
+                            <img alt="Ibiza"
+                                src="https://magic-ibiza.com/wp-content/uploads/2025/02/House-Thumbnail.jpg">
+                        </div>
+                        <div class="spread-content">
+                            <h3 class="spread-title">Ibiza</h3>
+                            <p class="text-large">
+                                House was also being developed by DJs and record producers in the booming dance club
+                                scene in
+                                Ibiza. Notably when DJ Alfredo, the father of Balearic house, began his residency at
+                                Amnesia in
+                                1983. While no house artists or labels came from Ibiza at the time, mixing house music
+                                with a
+                                more Italo disco influence was discernible.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <footer>
+        <p>Sources: Wikipedia</p>
+    </footer>
+</body>
+
+</html>
